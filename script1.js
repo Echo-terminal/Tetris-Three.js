@@ -2,6 +2,13 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 document.addEventListener("DOMContentLoaded", () => {
+    const backgroundMusic = new Audio('assets/music.mp3');
+    backgroundMusic.loop = true;
+    backgroundMusic.volume = 0.5;
+
+    const lineClearSound = new Audio('assets/line_clear.mp3');
+    lineClearSound.volume = 0.3;
+
     // Three.js setup
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
@@ -288,11 +295,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     );
                 });
                 updateBoard();
-    
+                
                 blinkCount++;
                 if (blinkCount >= 6) {
                     clearInterval(blinkInterval);
-    
+                    lineClearSound.play();
                     setTimeout(() => {
                         completedLines.sort((a, b) => b - a).forEach(lineY => {
                             board.splice(lineY, 1);
@@ -365,6 +372,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         
+        backgroundMusic.pause();
+        backgroundMusic.currentTime = 0;
+
         updateBoard();
         showGameOverScreen();
     }
@@ -396,7 +406,7 @@ document.addEventListener("DOMContentLoaded", () => {
         isGameRunning = true;
         gameScore = 0;
         updateScore();
-        
+
         updateBoard();
         
         // Clear any existing tetromino group
@@ -416,6 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("keydown", (e) => {
         if (e.key === " " || e.code === "Space") {
             if (!isGameRunning) {
+                backgroundMusic.play();
                 startGame();
             }
         }

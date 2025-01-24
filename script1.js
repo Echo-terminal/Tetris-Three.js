@@ -2,11 +2,11 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const backgroundMusic = new Audio('assets/music.mp3');
+    const backgroundMusic = new Audio('./assets/music.mp3');
     backgroundMusic.loop = true;
     backgroundMusic.volume = 0.5;
 
-    const lineClearSound = new Audio('assets/line_clear.mp3');
+    const lineClearSound = new Audio('./assets/line_clear.mp3');
     lineClearSound.volume = 0.3;
 
     // Three.js setup

@@ -6,10 +6,10 @@ import lineClearSoundUrl from '/line_clear.mp3'
 document.addEventListener("DOMContentLoaded", () => {
     const backgroundMusic = new Audio(backgroundMusicUrl);
     backgroundMusic.loop = true;
-    backgroundMusic.volume = 0.5;
+    backgroundMusic.volume = 0.3;
 
     const lineClearSound = new Audio(lineClearSoundUrl);
-    lineClearSound.volume = 0.3;
+    lineClearSound.volume = 0.5;
 
     // Three.js setup
     const scene = new THREE.Scene();

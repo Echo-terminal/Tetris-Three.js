@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     backgroundMusic.volume = 0.3;
 
     const lineClearSound = new Audio(lineClearSoundUrl);
-    lineClearSound.volume = 0.5;
+    lineClearSound.volume = 0.7;
 
     // Three.js setup
     const scene = new THREE.Scene();
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const colors = {
         I: 0x01EDFA,
-        J: 0x2E2E84,
+        J: 0x6161ff,
         L: 0xFFC82E,
         O: 0xFEFB34,
         S: 0x53DA3F,

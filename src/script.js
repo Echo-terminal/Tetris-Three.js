@@ -1,12 +1,14 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import backgroundMusicUrl from '/music.mp3'
+import lineClearSoundUrl from '/line_clear.mp3'
 
 document.addEventListener("DOMContentLoaded", () => {
-    const backgroundMusic = new Audio('assets/music.mp3');
+    const backgroundMusic = new Audio(backgroundMusicUrl);
     backgroundMusic.loop = true;
     backgroundMusic.volume = 0.5;
 
-    const lineClearSound = new Audio('assets/line_clear.mp3');
+    const lineClearSound = new Audio(lineClearSoundUrl);
     lineClearSound.volume = 0.3;
 
     // Three.js setup

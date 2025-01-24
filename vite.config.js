@@ -5,5 +5,5 @@ export default defineConfig(({ command }) => {
 
   const base = isProd ? "/Tetris-Three.js/" : "/";
 
-  return { base, publicDir: "assets" };
+  return { base };
 });

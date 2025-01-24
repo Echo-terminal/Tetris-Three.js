@@ -7,6 +7,7 @@ Clone the repository to your local machine:
 git clone https://github.com/Echo-Terminal/Tetris-Three.js.git
 cd Tetris-Three.js
 ```
+Run:
 ```
 npx vite
 ```

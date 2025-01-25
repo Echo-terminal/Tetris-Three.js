@@ -14,3 +14,12 @@ Run:
 ```
 npx vite
 ```
+
+## Controls
+
+Use "Space" to Start Game
+Use "Arrows Right and Left" to move tertromino horizotally"
+Use "Arrow Up" to rotate tetromino
+Use "Arrow Down" to move tetromino down
+Use "Left Mouse Button" to rotate the camera.
+Use "Right Mouse Button" to move camera.

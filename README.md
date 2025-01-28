@@ -85,6 +85,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Developed as part of the *Grafika Komputerowa* course project
+- This project was developed for self-learning purposes
 - Built with [Three.js](https://threejs.org/)
 - Special thanks to the Three.js community for their documentation and examples
+- The background music was sourced from this video: [YouTube Link](https://youtu.be/v8PQs-h7VeI?si=xFw3NuTiKcUjYVCn)
